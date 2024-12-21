@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+EzShopie
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+EzShopie is an e-commerce application that allows users to browse products, manage their shopping cart, and save items to their wishlist. The application features user authentication using Auth0, providing a secure way for users to manage their accounts.
 
-## Available Scripts
+Features
+User authentication with Auth0
+Browse products
+Add products to the shopping cart
+Manage quantities in the cart
+Remove items from the cart
+Save items to a wishlist
+View and manage wishlist items
 
-In the project directory, you can run:
+Technologies Used
+React.js
+Auth0 for authentication
+Context API for state management (Cart and Wishlist)
+CSS for styling
+Node.js and Express (if backend is included)
+MongoDB (if backend is included)
 
-### `npm start`
+Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prerequisites
+Make sure you have the following installed:
+Node.js (version 14 or higher)
+npm (Node package manager)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation
 
-### `npm test`
+Clone the repository:
+bash
+git clone https://github.com/ItsDazai/EzShopie.git
+cd ezshopie/client
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Install dependencies:
 
-### `npm run build`
+For the client-side:
+bash
+npm install
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Set Up Environment Variables:
+Create a .env file in the client directory and add your Auth0 domain and client ID:
+text
+REACT_APP_AUTH0_DOMAIN=your-auth0-domain
+REACT_APP_AUTH0_CLIENT_ID=your-auth0-client-id
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run the Application:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Start the development server:
+bash
+npm start
 
-### `npm run eject`
+Open your browser:
+Navigate to http://localhost:3000 to view the application.
+Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+User Authentication:
+Users can log in using their Auth0 credentials.
+New users can sign up through Auth0.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Browsing Products:
+Users can view a list of available products.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Managing Cart:
+Users can add products to their cart.
+Users can adjust product quantities or remove items from the cart.
+The total price and delivery charges are displayed during checkout.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Wishlist Functionality:
+Users can add products to their wishlist.
+Users can view their wishlist and add items from there to their cart.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributing
+Contributions are welcome! If you have suggestions for improvements or new features, feel free to fork the repository and submit a pull request.
