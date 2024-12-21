@@ -1,0 +1,281 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between logo and nav */
+  align-items: center; /* Center items vertically */
+  background-color: #333;
+  color: #fff;
+  padding: 10px; /* Add some padding to the header */
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0; /* Remove default padding */
+}
+
+.nav-links li {
+  display: inline; /* Display items inline */
+  margin-right: 20px; /* Add space between navigation items */
+}
+
+.nav-links li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+/* Navigation link styles */
+.nav-links a {
+  color: white; /* Default color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: yellow; /* Change color on hover */
+}
+
+/* Active link style (selected) */
+.nav-links a.active {
+  color: red; /* Change color when selected */
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Product Grid Styles */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 16px; /* Space between items */
+}
+
+.product-card {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Space between items */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 16px;
+  text-align: center; /* Center text inside card */
+  background-color: #fff; /* Background color of card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.product-image {
+  width: 100%; /* Make image fill the card width */
+  height: auto; /* Set a fixed height for images, maintain aspect ratio */
+}
+
+.product-name,
+.product-price {
+   margin:10px 0; /* Consistent margin for name and price */
+}
+
+.add-to-cart-button,
+.wishlist-button { 
+   background-color:#28a745; 
+   color:white; 
+   border:none; 
+   padding:10px; 
+   border-radius:5px; 
+   cursor:pointer; 
+   margin-top:auto; /* Push button to the bottom of the card */
+}
+
+/* Optional hover effect for buttons */
+.add-to-cart-button:hover,
+.wishlist-button:hover {
+   background-color:#218838; 
+}
+
+/* Cart styles */
+.cart-item {
+   display:flex;
+   align-items:center;
+   border:1px solid #ddd;
+   padding:10px;
+   margin-bottom:10px;
+}
+
+.cart-item-image {
+   width:100px; /* Set a fixed width for images in cart */
+   height:auto; /* Maintain aspect ratio */
+}
+
+.cart-item-details {
+   margin-left:20px; 
+}
+
+/* Checkout styles */
+.checkout-summary {
+   margin-bottom:20px;
+}
+
+.checkout-item {
+   display:flex;
+   align-items:center;
+   border:1px solid #ddd;
+   padding:10px;
+   margin-bottom:10px;
+}
+
+.checkout-item-image {
+   width:100px; /* Set a fixed width for images in checkout */
+}
+
+.checkout-item-details {
+   margin-left:20px; 
+}
+
+.checkout-button {
+   background-color:#28a745; 
+   color:white; 
+   border:none; 
+   padding:10px; 
+   border-radius:5px; 
+}
+
+/* Filter and Search Bar Styles */
+
+.category-filter,
+.search-bar {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+.category-filter h4,
+.search-bar h4 {
+    margin-bottom:10px;
+}
+
+.category-filter select,
+.search-bar input {
+    padding:5px;
+    width: calc(100% - 12px); /* Full width minus padding for better alignment */
+    border-radius:5px;
+    border:1px solid #ccc; 
+}
+
+/* Search bar specific styles */
+
+.search-bar input {
+    height:38px; /* Adjust height to match other inputs if necessary */ 
+}
+
+/* Profile Icon Button Styles */
+
+.profile-icon-button {
+    background-color: transparent; /* Transparent background for icon button */
+    border:none; /* Remove default border */
+    color:white; /* Icon color */
+    cursor:pointer; /* Pointer cursor on hover */
+    font-size:24px; /* Adjust size as needed for visibility */ 
+}
+
+.profile-icon-button:hover {
+    color:#ffcc00; /* Change icon color on hover for better visibility */ 
+}
+
+/* Login and Sign-Up Page Styles */
+
+.login-container,
+.signup-container,
+.wishlist-container { 
+    max-width:400px;
+    margin:auto;
+    padding:20px;
+    border-radius:.5em ;
+    box-shadow:.2em .2em .5em rgba(0,0,0,.1);
+    background-color:#f9f9f9;
+}
+
+.login-container h2,
+.signup-container h2,
+.wishlist-container h2 { 
+    text-align:center;
+}
+
+.login-container form,
+.signup-container form,
+.wishlist-container form { 
+    display:flex;
+    flex-direction : column ;
+}
+
+.login-container label,
+.signup-container label,
+.wishlist-container label { 
+    margin-bottom:.5em
+}
+
+.login-container input,
+.signup-container input,
+.login-container button,
+.signup-container button {   
+     width :100%;
+     padding:.8em ;
+     margin-bottom:.8em ;
+     border-radius:.5em ;
+     border :1 px solid #ccc ;
+ }
+
+.login-container button,
+.signup-container button{
+     background-color:#28a745 ;
+     color:white ;
+     cursor:pointer ;
+ }
+
+.login-container button:hover,
+.signup-container button:hover{
+     background-color:#218838 ;
+ }
+
+/* Wishlist Styles */
+
+.wishlist-item {
+    display:flex;
+    align-items:center;
+    border-bottom:.5px solid #ddd ; /* Add bottom border between items */
+    padding:.5em ; /* Add some padding */
+}
+
+.wishlist-item h3{
+    flex-grow :1 ; /* Allow title to take available space */
+}
+
+/* Add to Wishlist Button Styles */
+.add-to-wishlist-button {
+  background-color: #333; /* Dark background color */
+  color: white; /* White text color */
+  border: none; /* Remove default border */
+  padding: 12px 20px; /* Add more padding for a better appearance */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.add-to-wishlist-button:hover {
+  background-color: #555; /* Lighter shade on hover */
+}
