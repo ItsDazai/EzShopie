@@ -31,6 +31,7 @@ Installation
 Clone the repository:
 bash
 git clone https://github.com/ItsDazai/EzShopie.git
+
 cd ezshopie/client
 
 Install dependencies:
